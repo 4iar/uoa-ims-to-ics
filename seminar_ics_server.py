@@ -4,6 +4,7 @@ from seminar_parser import fetch_events_as_ics
 
 app = Flask(__name__)
 
+
 @app.route('/ims_seminars/')
 def ims_seminars_as_ics():
     ics = fetch_events_as_ics()
