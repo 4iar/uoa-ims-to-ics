@@ -1,7 +1,7 @@
 from redis import Redis
-from seminar_parser import fetch_events_as_ics
+from .seminar_parser import fetch_events_as_ics
 from datetime import datetime
-from config_parser import Config
+from .config_parser import Config
 
 config = Config()
 
