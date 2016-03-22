@@ -2,7 +2,7 @@ from flask import Flask
 from flask import Response
 from flask.ext.redis import FlaskRedis
 from redis import Redis
-from config_parser import Config
+from .config_parser import Config
 
 config = Config()
 app = Flask(__name__)
