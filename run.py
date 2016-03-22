@@ -1,15 +1,5 @@
-import subprocess
-from .update_calendar import update_calendar
-import time
-from .config_parser import Config
+from ims_to_ics.app import app
 
 if __name__ == '__main__':
 
-    config = Config()
-
-    subprocess.Popen(['python3', './ims_to_ics/app.py'])
-
-    while True:
-        update_calendar()
-        time.sleep(60*config.getint('DEFAULT',
-                                    'CalendarUpdateIntervalMinutes'))
+    app.run()
