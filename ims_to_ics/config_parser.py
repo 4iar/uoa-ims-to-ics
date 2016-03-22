@@ -4,7 +4,7 @@ class Config():
 
     def __init__(self, config_filename='config.ini'):
         self.config = configparser.ConfigParser()
-        self.config.read('../{}'.format(config_filename))
+        self.config.read(config_filename)
 
     def getint(self, section, key):
 
