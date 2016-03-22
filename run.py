@@ -1,7 +1,7 @@
 import subprocess
-from ims_to_ics.update_calendar import update_calendar
+from .update_calendar import update_calendar
 import time
-from ims_to_ics.config_parser import Config
+from .config_parser import Config
 
 if __name__ == '__main__':
 
