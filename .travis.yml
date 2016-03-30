@@ -1,7 +1,8 @@
 language: python
 python:
   - 3.4
-# dependencies
+before_install:
+    pip install setuptools
 install:
   - pip install .
   - pip install -r requirements.txt
