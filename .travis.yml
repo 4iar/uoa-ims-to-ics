@@ -4,7 +4,6 @@ python:
 before_install:
     pip install setuptools
 install:
-  - pip install .
   - pip install -r requirements.txt
 # run tests
 script:
